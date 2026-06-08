@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alexandra Voss — Writer & Storyteller</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Crimson+Pro:ital,wght@0,300;0,400;1,300&family=Josefin+Sans:wght@100;300;400&family=Vazirmatn:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ░░ NOISE OVERLAY ░░ -->
+  <div class="noise-overlay"></div>
+
+  <!-- ░░ NAVIGATION ░░ -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">A.V.</div>
+    <ul class="nav-links">
+      <li><a href="#hero"    data-i18n="nav_home">Home</a></li>
+      <li><a href="#about"   data-i18n="nav_about">About</a></li>
+      <li><a href="#player"  data-i18n="nav_music">Music</a></li>
+      <li><a href="#stories" data-i18n="nav_stories">Stories</a></li>
+    </ul>
+
+    <!-- Language Switcher -->
+    <div class="lang-switcher" id="langSwitcher">
+      <button class="lang-btn active" data-lang="en">EN</button>
+      <span class="lang-divider">|</span>
+      <button class="lang-btn" data-lang="fa">FA</button>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ░░ HERO ░░ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-text" aria-hidden="true" data-i18n="hero_bg">STORIES</div>
+    <div class="hero-content">
+      <div class="hero-portrait-wrap">
+        <div class="hero-portrait">
+          <div class="portrait-placeholder">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="38" r="20" fill="none" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M15 90 Q15 65 50 65 Q85 65 85 90" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div class="portrait-ring"></div>
+        </div>
+      </div>
+      <div class="hero-text">
+        <p class="hero-eyebrow" data-i18n="hero_eyebrow">Writer &amp; Storyteller</p>
+        <h1 class="hero-name">Alexandra<br /><em>Voss</em></h1>
+        <p class="hero-bio" data-i18n="hero_bio">
+          I write at the intersection of memory and invention — stories that live in the dark corners of ordinary rooms, in the silence between spoken sentences. My work has been called <em>"quietly devastating"</em> and I consider that the highest of compliments.
+        </p>
+        <div class="hero-links">
+          <a href="#stories" class="btn btn-primary" data-i18n="hero_cta_primary">Read My Stories</a>
+          <a href="#about"   class="btn btn-ghost"   data-i18n="hero_cta_ghost">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span data-i18n="scroll_hint">Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ░░ ABOUT ░░ -->
+  <section class="about" id="about">
+    <div class="section-label" aria-hidden="true">01</div>
+    <div class="about-inner">
+      <div class="about-photo-col">
+        <div class="about-photo-frame">
+          <div class="about-photo-placeholder">
+            <span data-i18n="photo_placeholder">Your Photo</span>
+          </div>
+          <div class="about-photo-deco"></div>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num">47</span>
+            <span class="stat-label" data-i18n="stat_stories">Stories Published</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">12</span>
+            <span class="stat-label" data-i18n="stat_awards">Awards</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">3</span>
+            <span class="stat-label" data-i18n="stat_collections">Collections</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-text-col">
+        <h2 class="section-title" data-i18n="about_title">About <em>Me</em></h2>
+        <div class="about-body">
+          <p data-i18n="about_p1">Born in a city that no longer exists in the way I remember it, I came to writing through the back door — through music, through loss, through a stubborn refusal to let certain moments dissolve into the ordinary fog of forgetting.</p>
+          <p data-i18n="about_p2">I studied literature at the University of Edinburgh and spent three years translating obscure 19th-century correspondence before realising that what I truly wanted was to generate new silences, not excavate old ones.</p>
+          <p data-i18n="about_p3">My short fiction has appeared in <em>Granta</em>, <em>The Paris Review</em>, and various anthologies. When I am not writing, I am walking slowly through places where something important once happened.</p>
+        </div>
+        <div class="about-tags">
+          <span data-i18n="tag_fiction">Short Fiction</span>
+          <span data-i18n="tag_essays">Literary Essays</span>
+          <span data-i18n="tag_translation">Translation</span>
+          <span data-i18n="tag_spoken">Spoken Word</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ MUSIC PLAYER ░░ -->
+  <section class="player-section" id="player">
+    <div class="section-label" aria-hidden="true">02</div>
+    <div class="player-wrap">
+      <p class="player-eyebrow" data-i18n="player_eyebrow">Ambience &amp; Atmosphere</p>
+      <h2 class="section-title" data-i18n="player_title">Writing <em>Playlist</em></h2>
+      <p class="player-subtitle" data-i18n="player_subtitle">The sounds that shape the sentences.</p>
+
+      <div class="player" id="musicPlayer">
+        <div class="player-visualizer" id="visualizer">
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+
+        <div class="player-track-info">
+          <p class="track-number" id="trackNumber">01 / 03</p>
+          <h3 class="track-title" id="trackTitle">Midnight Correspondence</h3>
+          <p class="track-artist" id="trackArtist">For late-night drafting sessions</p>
+        </div>
+
+        <div class="player-progress-wrap">
+          <span class="time" id="currentTime">0:00</span>
+          <div class="progress-bar" id="progressBar">
+            <div class="progress-fill" id="progressFill"></div>
+            <div class="progress-thumb" id="progressThumb"></div>
+          </div>
+          <span class="time" id="duration">0:00</span>
+        </div>
+
+        <div class="player-controls">
+          <button class="ctrl-btn ctrl-secondary" id="prevBtn" aria-label="Previous track">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6 8.5 6V6z"/></svg>
+          </button>
+          <button class="ctrl-btn ctrl-play" id="playBtn" aria-label="Play/Pause">
+            <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" style="display:none"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+          </button>
+          <button class="ctrl-btn ctrl-secondary" id="nextBtn" aria-label="Next track">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 18l8.5-6L6 6v12zm2-8.14L11.03 12 8 14.14V9.86zM16 6h2v12h-2z"/></svg>
+          </button>
+        </div>
+
+        <div class="player-tracklist" id="trackList"></div>
+        <audio id="audioElement"></audio>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ STORIES ░░ -->
+  <section class="stories-section" id="stories">
+    <div class="section-label" aria-hidden="true">03</div>
+    <div class="stories-header">
+      <h2 class="section-title" data-i18n="stories_title">Short <em>Stories</em></h2>
+      <p class="stories-subtitle" data-i18n="stories_subtitle">Dispatches from the interior. Updated whenever a new one escapes.</p>
+    </div>
+
+    <div class="stories-grid" id="storiesGrid">
+      <div class="stories-loading" id="storiesLoading">
+        <div class="loading-dots"><span></span><span></span><span></span></div>
+        <p data-i18n="stories_loading">Gathering stories…</p>
+      </div>
+    </div>
+
+    <div class="stories-error" id="storiesError" style="display:none">
+      <p data-i18n="stories_error">⚠ Could not load stories. Make sure <code>data.txt</code> is in the same folder and you're running this through a local server (e.g. <code>npx serve .</code> or VS Code Live Server).</p>
+    </div>
+  </section>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-name">Alexandra Voss</p>
+      <p class="footer-copy" data-i18n="footer_copy">© 2025 — All stories are true in the ways that matter.</p>
+      <div class="footer-links">
+        <a href="#" data-i18n="footer_twitter">Twitter</a>
+        <a href="#" data-i18n="footer_instagram">Instagram</a>
+        <a href="#" data-i18n="footer_contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
