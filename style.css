@@ -452,6 +452,162 @@ em { font-style: italic; color: var(--gold); }
 }
 
 /* ═══════════════════════════════════════════════════
+   WORK
+═══════════════════════════════════════════════════ */
+.work-section {
+  position: relative;
+  padding: 7rem 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.work-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--border), transparent);
+}
+
+.work-header {
+  max-width: 640px;
+  margin-bottom: 3.5rem;
+}
+
+.work-eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.6rem;
+  font-weight: 100;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.75rem;
+}
+
+.work-subtitle {
+  font-family: var(--font-body);
+  font-style: italic;
+  color: var(--text-dim);
+  font-size: 1.05rem;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 3rem;
+  align-items: start;
+  margin-bottom: 3rem;
+}
+
+.work-card {
+  background: var(--ink-soft);
+  border: 1px solid var(--border-soft);
+  padding: 2.5rem 2.25rem;
+  position: relative;
+  overflow: hidden;
+  transition: border-color var(--transition), background var(--transition);
+}
+
+.work-card:hover {
+  border-color: var(--border);
+  background: var(--ink-mid);
+}
+
+.work-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 2px;
+  background: linear-gradient(to right, var(--gold), transparent);
+}
+
+.work-card-period {
+  font-family: var(--font-sans);
+  font-size: 0.55rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.work-card-role {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.25;
+  color: var(--text-main);
+  margin-bottom: 0.4rem;
+  letter-spacing: -0.01em;
+}
+
+.work-card-place {
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  font-weight: 300;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 1.25rem;
+}
+
+.work-card-desc {
+  font-family: var(--font-body);
+  font-size: 0.97rem;
+  line-height: 1.75;
+  color: var(--text-soft);
+}
+
+.work-skills {
+  padding-top: 0.5rem;
+}
+
+.work-subhead {
+  font-family: var(--font-sans);
+  font-size: 0.6rem;
+  font-weight: 300;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 1.25rem;
+}
+
+.work-tags { margin-top: 0; }
+
+.work-favorites {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+  background: var(--border-soft);
+  border: 1px solid var(--border-soft);
+}
+
+.favorite-item {
+  flex: 1 1 180px;
+  background: var(--ink);
+  padding: 1.5rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.favorite-label {
+  font-family: var(--font-sans);
+  font-size: 0.55rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.favorite-value {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: var(--gold);
+  letter-spacing: -0.01em;
+}
+
+/* ═══════════════════════════════════════════════════
    MUSIC PLAYER
 ═══════════════════════════════════════════════════ */
 .player-section {
@@ -1007,6 +1163,10 @@ em { font-style: italic; color: var(--gold); }
   .about-inner { grid-template-columns: 1fr; gap: 3rem; }
   .about-photo-frame { margin: 0 auto; }
 
+  .work-section { padding: 5rem 1.5rem; }
+  .work-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .favorite-item { flex: 1 1 140px; }
+
   .player-section { padding: 5rem 1.5rem; }
   .player { padding: 2rem 1.5rem 1.5rem; }
 
@@ -1085,7 +1245,9 @@ html[lang="fa"] body {
 html[lang="fa"] .hero-name,
 html[lang="fa"] .section-title,
 html[lang="fa"] .track-title,
-html[lang="fa"] .story-card-title {
+html[lang="fa"] .story-card-title,
+html[lang="fa"] .work-card-role,
+html[lang="fa"] .favorite-value {
   font-family: 'Vazirmatn', sans-serif;
   font-weight: 400;
   letter-spacing: 0;
@@ -1100,7 +1262,12 @@ html[lang="fa"] .story-card-read-more,
 html[lang="fa"] .nav-links a,
 html[lang="fa"] .btn,
 html[lang="fa"] .about-tags span,
-html[lang="fa"] .footer-links a {
+html[lang="fa"] .footer-links a,
+html[lang="fa"] .work-eyebrow,
+html[lang="fa"] .work-card-period,
+html[lang="fa"] .work-card-place,
+html[lang="fa"] .work-subhead,
+html[lang="fa"] .favorite-label {
   font-family: 'Vazirmatn', sans-serif;
   letter-spacing: 0;
 }
@@ -1132,6 +1299,12 @@ html[lang="fa"] .about-photo-deco {
   border-left: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
 }
+
+/* work RTL */
+html[lang="fa"] .work-section { direction: rtl; text-align: right; }
+html[lang="fa"] .work-header { margin-left: auto; }
+html[lang="fa"] .work-tags { justify-content: flex-end; }
+html[lang="fa"] .work-card::before { background: linear-gradient(to left, var(--gold), transparent); }
 
 /* player RTL */
 html[lang="fa"] .player-wrap { direction: rtl; }
